@@ -182,24 +182,21 @@ p {
   font-size: 0.8rem;
   margin-top: 1.5rem;
   font-weight: 400;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-main);
   box-sizing: border-box;
 }
 
 .navbar__logo {
-  font-size: 1rem;
-  letter-spacing: 0.12em;
   color: var(--primary-500);
   pointer-events: auto;
-  margin-right: 1.5rem;
-  font-family: "Inter", sans-serif;
+  margin-left: 1rem;
   display: flex;
   align-items: center;
   height: 100%;
 }
 
 .navbar__logo .logo-icon {
-  height: 28px;
+  height: 36px;
   width: auto;
 }
 
@@ -210,7 +207,7 @@ p {
   margin: 0 0.7rem 0 0;
   padding: 0;
   pointer-events: auto;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-heading);
   align-items: center;
   height: 100%;
 }
@@ -218,11 +215,10 @@ p {
 .navbar__links a {
   text-decoration: none;
   color: var(--primary-500);
-  letter-spacing: 0.15em;
+  letter-spacing: 0.09em;
   transition: color 0.2s;
-  font-family: "Inter", sans-serif;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 400;
   display: flex;
   align-items: center;
   height: 100%;
@@ -233,13 +229,12 @@ p {
 }
 
 .navbar__cta {
-  background: var(--primary-500);
+  background: rgba(18, 153, 163, 0.9);
   color: var(--white);
   border: none;
   border-radius: 999px;
   padding: 0 2.2em;
   letter-spacing: 0.13em;
-  text-transform: uppercase;
   text-decoration: none;
   transition: background 0.2s;
   pointer-events: auto;
@@ -248,9 +243,9 @@ p {
   margin-bottom: 0.25em;
   display: flex;
   align-items: center;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-heading);
   font-size: 1.1rem;
-  font-weight: 700;
+  font-weight: 400;
   height: 80%;
   min-height: 2.5em;
   max-height: 4em;
@@ -350,7 +345,7 @@ p {
   display: block;
   width: 90%;
   margin: 0 auto 2.5rem auto;
-  background: var(--primary-500);
+  background: rgba(18, 153, 163, 0.6);
   color: var(--white);
   border: none;
   border-radius: 6px;
@@ -358,7 +353,6 @@ p {
   font-size: 1.1rem;
   font-weight: 500;
   letter-spacing: 0.13em;
-  text-transform: uppercase;
   text-align: center;
   text-decoration: none;
   transition: background 0.2s;
@@ -869,7 +863,7 @@ html {
 .hero-top-cta {
   background: #fff;
   color: var(--primary-500);
-  border: none;
+  border: 1.5px solid rgba(18, 153, 163, 0.5);
   border-radius: 999px;
   padding: 0.5em 1.6em;
   font-size: 1rem;

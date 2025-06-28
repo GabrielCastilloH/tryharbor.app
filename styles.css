@@ -504,21 +504,43 @@ section {
   background: var(--secondary-100);
 }
 
-.steps-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+.how-it-works-title {
+  text-align: left;
+  margin-left: 0.2em;
+}
+
+.creative-steps-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2.5rem 2.5rem;
+  position: relative;
 }
 
 .step-card {
-  background: var(--white);
-  padding: 2.5rem 2rem 2rem 2rem;
+  background: var(--navbar-bg);
+  border: 1.5px solid var(--navbar-border);
   border-radius: 32px;
-  text-align: center;
-  box-shadow: 0 8px 32px var(--shadow-light);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  box-shadow: 0 6px 24px 0 rgba(18, 153, 163, 0.1);
+  padding: 2.5rem 2rem 2rem 2rem;
+  text-align: left;
+  min-width: 290px;
+  max-width: 340px;
+  flex: 1 1 300px;
+  position: relative;
+  z-index: 2;
+  transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: box-shadow;
+}
+.step-card-1 {
+  margin-top: 0;
+}
+.step-card-2 {
+  margin-top: 60px;
+}
+.step-card-3 {
+  margin-top: 120px;
 }
 
 .step-number {
@@ -537,9 +559,10 @@ section {
   letter-spacing: 0.02em;
 }
 
-.step-card h3 {
-  color: var(--primary-500);
-  margin-bottom: 1rem;
+.step-arrow,
+.step-arrow-1,
+.step-arrow-2 {
+  display: none !important;
 }
 
 /* ===== FEATURES SECTION ===== */

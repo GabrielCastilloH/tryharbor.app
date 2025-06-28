@@ -1,5 +1,8 @@
-/* ===== COLOR VARIABLES ===== */
+/* ===== FONT VARIABLES ===== */
 :root {
+  --font-main: "Nunito", Arial, sans-serif;
+  --font-heading: "Roboto", Arial, sans-serif;
+
   /* Primary Colors - Teal Scheme */
   --primary-500: #1299a3;
   --primary-100: #e8f6f7;
@@ -38,7 +41,7 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-main);
   line-height: 1.6;
   color: var(--text-dark);
   background-color: var(--white);
@@ -57,6 +60,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: var(--font-heading);
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 1rem;
@@ -78,6 +82,7 @@ h3 {
 p {
   margin-bottom: 1rem;
   color: var(--text-medium);
+  font-family: var(--font-main);
 }
 
 /* ===== LOGO STYLES ===== */

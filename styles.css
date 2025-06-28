@@ -365,7 +365,6 @@ p {
 /* ===== HERO SECTION ===== */
 .hero {
   padding: 120px 0 80px;
-  background: var(--primary-100);
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -379,6 +378,14 @@ p {
   padding: 0;
   position: relative;
   overflow: hidden;
+  /* primary500 = #1299a3 (rgb 18 153 163) */
+  background: radial-gradient(
+    ellipse 100% 80% at 95% 30%,
+    rgba(18, 153, 163, 0.5) 0%,
+    rgba(18, 153, 163, 0.32) 35%,
+    rgba(18, 153, 163, 0.17) 65%,
+    rgba(255, 255, 255, 0) 90%
+  );
 }
 
 .hero-centered-container {
@@ -397,7 +404,7 @@ p {
 }
 
 .hero-top-cta {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.7);
   color: var(--primary-500);
   border: 1.5px solid rgba(18, 153, 163, 0.5);
   border-radius: 999px;

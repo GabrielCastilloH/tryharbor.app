@@ -46,9 +46,9 @@ body {
   color: var(--text-dark);
   background-color: var(--white);
   background: radial-gradient(
-    ellipse 60% 50% at 0% 40%,
-    var(--green) 0%,
-    rgba(255, 255, 255, 0.01) 80%
+    ellipse 60% 50% at 0% 30%,
+    rgba(11, 156, 129, 0.45) 0%,
+    rgba(255, 255, 255, 0.01) 70%
   );
 }
 

@@ -547,16 +547,16 @@ section {
 .step-number {
   width: 56px;
   height: 56px;
-  background: var(--primary-100);
+  background: transparent;
   color: var(--primary-500);
   border-radius: 50%;
+  border: 1.5px solid var(--navbar-border);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1.2rem;
-  box-shadow: 0 2px 8px var(--shadow-light);
   letter-spacing: 0.02em;
 }
 

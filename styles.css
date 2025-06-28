@@ -431,16 +431,6 @@ p {
   align-items: center;
 }
 
-.hero-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
-}
-
 .hero-title {
   color: var(--primary-500);
   margin-bottom: 1rem;
@@ -728,12 +718,6 @@ section {
 }
 
 @media (max-width: 768px) {
-  .hero-container {
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: 2rem;
-  }
-
   .hero-title {
     font-size: 2.5rem;
   }
@@ -871,7 +855,7 @@ html {
 
 .hero-centered-container {
   width: 100%;
-  max-width: 600px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -879,6 +863,7 @@ html {
   justify-content: center;
   text-align: center;
   padding: 4rem 1.5rem 2rem 1.5rem;
+  margin-top: 12rem;
 }
 
 .hero-top-cta {
@@ -898,7 +883,7 @@ html {
 
 .luxique-title {
   font-family: var(--font-heading);
-  font-size: 3.8rem;
+  font-size: 4.5rem;
   font-weight: 800;
   margin-bottom: 1.2rem;
   color: var(--text-dark);
@@ -908,7 +893,7 @@ html {
 
 .luxique-subtitle {
   font-family: var(--font-main);
-  font-size: 1.15rem;
+  font-size: 1.4rem;
   color: var(--text-medium);
   margin-bottom: 2.2rem;
   font-weight: 400;
@@ -932,11 +917,10 @@ html {
 
 .hero-phone-mockup {
   width: 100%;
-  max-width: 340px;
+  max-width: 800px;
   height: auto;
   border-radius: 2.2rem;
-  box-shadow: 0 8px 32px 0 rgba(18, 153, 163, 0.1);
-  background: #fff;
+  background: transparent;
 }
 
 @media (max-width: 700px) {
@@ -945,25 +929,14 @@ html {
     padding: 2.5rem 0.5rem 1.5rem 0.5rem;
   }
   .luxique-title {
-    font-size: 2.5rem;
+    font-size: 3rem;
+  }
+  .luxique-subtitle {
+    font-size: 1.2rem;
   }
   .hero-phone-mockup {
     max-width: 90vw;
   }
-}
-
-/* Remove old hero split styles if needed */
-.hero-container,
-.hero-content,
-.hero-image,
-.phone-mockup,
-.phone-screen,
-.app-interface,
-.app-header,
-.chat-preview,
-.message {
-  all: unset;
-  display: revert;
 }
 
 /* Squiggle line for 'Dating' in hero title */
@@ -974,18 +947,18 @@ html {
 }
 .squiggle-text {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   background: none;
-  color: var(--primary-500);
+  color: var(--text-dark);
   font-weight: 700;
   padding: 0 0.1em;
 }
 .squiggle-svg {
   position: absolute;
   left: 0;
-  bottom: 0.1em;
+  bottom: 0.3em;
   width: 100%;
   height: 0.6em;
-  z-index: 1;
+  z-index: 2;
   pointer-events: none;
 }

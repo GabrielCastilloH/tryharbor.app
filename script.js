@@ -3,12 +3,22 @@ document.addEventListener("DOMContentLoaded", function () {
   // Smooth scrolling for navigation links
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute("href"));
+      const href = this.getAttribute("href");
+      if (!href || href === "#") return;
+      const target = document.querySelector(href);
       if (target) {
-        target.scrollIntoView({
+        e.preventDefault();
+        // Get navbar height (fixed + margin)
+        const navbar = document.querySelector(".navbar");
+        let offset = 0;
+        if (navbar) {
+          offset = navbar.offsetHeight + 24; // 24px margin-top
+        }
+        const targetPosition =
+          target.getBoundingClientRect().top + window.pageYOffset - offset;
+        window.scrollTo({
+          top: targetPosition,
           behavior: "smooth",
-          block: "start",
         });
       }
     });

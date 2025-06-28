@@ -47,13 +47,14 @@ body {
   background-color: var(--white);
   background: radial-gradient(
       ellipse 60% 50% at 0% 30%,
-      rgba(121, 94, 206, 0.3) 0%,
-      rgba(255, 255, 255, 0.01) 70%
+      rgba(20, 165, 136, 0.3) 0%,
+      rgba(255, 255, 255, 0.001) 70%
     ),
     radial-gradient(
       ellipse 60% 50% at 100% 60%,
-      rgba(11, 156, 129, 0.3) 0%,
-      rgba(255, 255, 255, 0.001) 70%
+
+      rgba(121, 94, 206, 0.3) 0%,
+      rgba(255, 255, 255, 0.01) 70%
     );
 }
 

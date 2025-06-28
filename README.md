@@ -1,13 +1,13 @@
 # 🌊 Harbor - A Relationship App for Cornell
 
-A responsive and interactive landing page for Harbor, a relationship app designed by Cornell students for meaningful, personality-based connections.
+A modern, clean landing page for Harbor, a relationship app designed by Cornell students for meaningful, personality-based connections.
 
 ## 🎨 Design Features
 
-- **Warm & Trustworthy Design**: Soft gradients and rounded containers
-- **Mobile-First Approach**: Responsive design that works on all devices
-- **Interactive Elements**: Hover animations, smooth transitions, and modern UI
-- **Color Variables**: Easy-to-customize color scheme using CSS variables
+- **Modern Teal Design**: Clean, professional color scheme
+- **Minimalist Approach**: Focused on content without distracting animations
+- **Mobile-First**: Responsive design that works on all devices
+- **Color Variables**: Easy-to-customize teal color palette using CSS variables
 
 ## 🎯 Key Sections
 
@@ -25,45 +25,40 @@ All colors are defined as CSS variables at the top of `styles.css` for easy cust
 
 ```css
 :root {
-  /* Primary Colors */
-  --primary-light: #b2f2bb;
-  --primary-medium: #52b788;
-  --primary-dark: #2d6a4f;
+  /* Primary Colors - Teal Scheme */
+  --primary-500: #1299a3;
+  --primary-100: #e8f6f7;
 
-  /* Accent Colors */
-  --accent-light: #ffb6c1;
-  --accent-medium: #fadadd;
+  /* Secondary Colors */
+  --secondary-500: #a7b3b1;
+  --secondary-200: #edf3f3;
+  --secondary-100: #fefefe;
 
-  /* Neutral Colors */
-  --background-light: #f8f9fa;
-  --background-white: #ffffff;
-  --text-dark: #212529;
-  --text-medium: #6c757d;
-  --text-light: #adb5bd;
+  /* Additional Colors */
+  --green: #0b9c81bb;
+  --red: #c4485fbb;
+  --black: #231f20;
 }
 ```
 
-## 🚀 Interactive Features
+## 🚀 Features
 
-- **Mobile Menu**: Hamburger menu for mobile devices
 - **Smooth Scrolling**: Navigation links scroll smoothly to sections
-- **Photo Blur Simulator**: Interactive phone mockup with blur reveal
-- **Button Ripple Effects**: Modern button interactions
-- **Popup Simulation**: "Continue conversation" popup demo
-- **Scroll Progress**: Visual progress indicator
-- **Intersection Observer**: Animated card reveals on scroll
+- **Responsive Design**: Works perfectly on desktop, tablet, and mobile
+- **Clean Typography**: Modern Inter font family
+- **Professional Layout**: Clean cards and sections
 
 ## 📱 Responsive Design
 
 - **Desktop**: Full layout with side-by-side content
 - **Tablet**: Adjusted grid layouts and spacing
-- **Mobile**: Single-column layout with hamburger menu
+- **Mobile**: Single-column layout with optimized navigation
 
 ## 🛠️ Technologies Used
 
 - **HTML5**: Semantic markup with accessibility in mind
 - **CSS3**: Modern features including Grid, Flexbox, and CSS Variables
-- **JavaScript**: Vanilla JS for interactivity
+- **JavaScript**: Minimal vanilla JS for smooth scrolling
 - **Font Awesome**: Icons for buttons and UI elements
 - **Google Fonts**: Inter font family for modern typography
 
@@ -72,8 +67,8 @@ All colors are defined as CSS variables at the top of `styles.css` for easy cust
 ```
 HarborWebsite/
 ├── index.html          # Main HTML structure
-├── styles.css          # CSS with color variables
-├── script.js           # Interactive functionality
+├── styles.css          # CSS with teal color variables
+├── script.js           # Minimal functionality
 └── README.md           # Project documentation
 ```
 
@@ -83,9 +78,9 @@ To change the color scheme, simply modify the CSS variables at the top of `style
 
 ```css
 :root {
-  --primary-light: #YOUR_COLOR;
-  --primary-medium: #YOUR_COLOR;
-  --primary-dark: #YOUR_COLOR;
+  --primary-500: #YOUR_COLOR;
+  --primary-100: #YOUR_COLOR;
+  --secondary-500: #YOUR_COLOR;
   /* ... other colors */
 }
 ```
@@ -94,7 +89,7 @@ To change the color scheme, simply modify the CSS variables at the top of `style
 
 1. Clone or download the project files
 2. Open `index.html` in a web browser
-3. The page will load with all interactive features
+3. The page will load with clean, modern design
 
 ## 📱 Browser Support
 
@@ -104,15 +99,15 @@ To change the color scheme, simply modify the CSS variables at the top of `style
 - Edge
 - Mobile browsers
 
-## 🎨 Design Inspiration
+## 🎨 Design Philosophy
 
-This landing page follows the visual style of modern mobile app banners with:
+This landing page follows modern design principles:
 
-- Soft gradients and rounded containers
-- Hand-held phone mockups
-- Clean UI with clear CTAs
-- Elegant font pairing
-- Clear iconography and sectional storytelling
+- Clean, minimalist aesthetic
+- Professional teal color scheme
+- Focus on content and readability
+- Subtle hover effects
+- Consistent spacing and typography
 
 ## 📞 Contact
 

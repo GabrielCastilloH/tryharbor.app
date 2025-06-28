@@ -46,14 +46,13 @@ body {
   color: var(--text-dark);
   background-color: var(--white);
   background: radial-gradient(
-      ellipse 60% 50% at 0% 30%,
+      ellipse 40% 30% at 0% 30%,
       rgba(20, 165, 136, 0.3) 0%,
       rgba(255, 255, 255, 0.001) 70%
     ),
     radial-gradient(
-      ellipse 60% 50% at 100% 60%,
-
-      rgba(121, 94, 206, 0.3) 0%,
+      ellipse 40% 30% at 100% 60%,
+      rgba(121, 94, 206, 0.2) 0%,
       rgba(255, 255, 255, 0.01) 70%
     );
 }
@@ -398,9 +397,9 @@ p {
   /* primary500 = #1299a3 (rgb 18 153 163) */
   background: radial-gradient(
     ellipse 100% 80% at 95% 30%,
-    rgba(18, 153, 163, 0.5) 0%,
-    rgba(18, 153, 163, 0.32) 35%,
-    rgba(18, 153, 163, 0.17) 65%,
+    rgba(18, 153, 163, 0.4) 0%,
+    rgba(18, 153, 163, 0.2) 35%,
+    rgba(18, 153, 163, 0.02) 65%,
     rgba(255, 255, 255, 0) 90%
   );
 }

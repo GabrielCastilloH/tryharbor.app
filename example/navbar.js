@@ -1,20 +1,4 @@
-// ===== MINIMAL FUNCTIONALITY =====
 document.addEventListener("DOMContentLoaded", function () {
-  // Smooth scrolling for navigation links
-  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-    anchor.addEventListener("click", function (e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute("href"));
-      if (target) {
-        target.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
-      }
-    });
-  });
-
-  // Mobile navigation functionality
   const hamburger = document.getElementById("navbarHamburger");
   const overlay = document.getElementById("navbarOverlay");
   const closeBtn = document.getElementById("navbarClose");
@@ -36,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
       document.body.style.overflow = "";
     }
   });
-
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape") {
       overlay.classList.remove("active");

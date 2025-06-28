@@ -82,74 +82,21 @@ h3 {
 p {
   margin-bottom: 1rem;
   color: var(--text-medium);
-  font-family: var(--font-main);
 }
 
 /* ===== LOGO STYLES ===== */
-.logo-container {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
 .logo-icon {
   height: 32px;
   width: auto;
 }
 
-.logo-text {
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: var(--primary-500);
-}
-
-.hero-logo {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin-bottom: 0.5rem;
-}
-
-.hero-logo-icon {
-  height: 60px;
-  width: auto;
-}
-
-.hero-logo span {
-  font-size: 3.5rem;
-  font-weight: 700;
-  color: var(--primary-500);
-}
-
-.app-header-logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-}
-
-.app-logo-icon {
-  height: 24px;
-  width: auto;
-  filter: brightness(0) invert(1);
-}
-
-.footer-logo-container {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
+.navbar__logo .logo-icon {
+  height: 36px;
 }
 
 .footer-logo-icon {
   height: 28px;
-  width: auto;
   filter: brightness(0) invert(1) brightness(1.2);
-}
-
-.footer-logo-container h3 {
-  color: var(--primary-100);
-  margin: 0;
 }
 
 /* ===== GLASSY BACKGROUND ===== */
@@ -158,7 +105,6 @@ p {
   border: 0.8px solid var(--navbar-border);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  box-sizing: border-box;
   border-radius: 2px;
 }
 
@@ -178,35 +124,25 @@ p {
   border-radius: 999px;
   padding: 0.4rem 0.4rem 0.4rem 0.7rem;
   z-index: 100;
-  pointer-events: auto;
-  font-size: 0.8rem;
   margin-top: 1.5rem;
+  font-size: 0.8rem;
   font-weight: 400;
   font-family: var(--font-main);
-  box-sizing: border-box;
 }
 
 .navbar__logo {
   color: var(--primary-500);
-  pointer-events: auto;
   margin-left: 1rem;
   display: flex;
   align-items: center;
   height: 100%;
 }
-
-.navbar__logo .logo-icon {
-  height: 36px;
-  width: auto;
-}
-
 .navbar__links {
   display: flex;
   gap: 2.2rem;
   list-style: none;
   margin: 0 0.7rem 0 0;
   padding: 0;
-  pointer-events: auto;
   font-family: var(--font-heading);
   align-items: center;
   height: 100%;
@@ -237,8 +173,6 @@ p {
   letter-spacing: 0.13em;
   text-decoration: none;
   transition: background 0.2s;
-  pointer-events: auto;
-  box-shadow: none;
   margin-top: 0.25em;
   margin-bottom: 0.25em;
   display: flex;
@@ -257,7 +191,7 @@ p {
   background: var(--green);
 }
 
-/* Hamburger menu styles */
+/* Hamburger menu */
 .navbar__hamburger {
   display: none;
   flex-direction: column;
@@ -281,7 +215,7 @@ p {
   transition: 0.3s;
 }
 
-/* Overlay styles */
+/* Mobile overlay */
 .navbar__overlay {
   display: none;
   position: fixed;
@@ -334,7 +268,7 @@ p {
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-heading);
 }
 
 .navbar__overlay-links li a:hover {
@@ -356,8 +290,7 @@ p {
   text-align: center;
   text-decoration: none;
   transition: background 0.2s;
-  box-shadow: none;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-heading);
 }
 
 .navbar__overlay-cta:hover {
@@ -379,7 +312,12 @@ p {
   transition: all 0.2s ease;
 }
 
-/* App Store and Google Play SVG Buttons */
+.btn.large {
+  padding: 16px 32px;
+  font-size: 1.1rem;
+}
+
+/* App Store and Google Play buttons */
 .app-store-btn,
 .google-play-btn {
   display: inline-block;
@@ -399,21 +337,14 @@ p {
   display: block;
 }
 
-/* Hero section buttons */
 .hero-buttons .app-store-btn img,
 .hero-buttons .google-play-btn img {
   height: 45px;
 }
 
-/* CTA section buttons */
 .cta-buttons .app-store-btn img,
 .cta-buttons .google-play-btn img {
   height: 60px;
-}
-
-.btn.large {
-  padding: 16px 32px;
-  font-size: 1.1rem;
 }
 
 /* ===== HERO SECTION ===== */
@@ -425,100 +356,116 @@ p {
   align-items: center;
 }
 
-.hero-title {
-  color: var(--primary-500);
-  margin-bottom: 1rem;
-  font-size: 3.5rem;
-  line-height: 1.1;
-}
-
-.hero-subtitle {
-  font-size: 1.5rem;
-  color: var(--green);
-  font-weight: 500;
-  margin-bottom: 1.5rem;
-}
-
-.hero-description {
-  font-size: 1.1rem;
-  color: var(--text-medium);
-  margin-bottom: 1rem;
-  line-height: 1.7;
-}
-
-.hero-buttons {
+.luxique-hero {
+  background: linear-gradient(
+    120deg,
+    #f6f9f9 0%,
+    #dff3f5 50%,
+    #b2edf1 80%,
+    #85d3e4 100%
+  );
+  min-height: 100vh;
   display: flex;
-  gap: 1rem;
-  margin-top: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
 }
 
-.hero-image {
+.hero-centered-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 1.5rem 2rem 1.5rem;
+  margin-top: 12rem;
+}
+
+.hero-top-cta {
+  background: #fff;
+  color: var(--primary-500);
+  border: 1.5px solid rgba(18, 153, 163, 0.5);
+  border-radius: 999px;
+  padding: 0.5em 1.6em;
+  font-size: 1rem;
+  font-family: var(--font-heading);
+  font-weight: 500;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 12px 0 rgba(18, 153, 163, 0.07);
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.luxique-title {
+  font-family: var(--font-heading);
+  font-size: 4.5rem;
+  font-weight: 800;
+  margin-bottom: 1.2rem;
+  color: var(--text-dark);
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+}
+
+.luxique-subtitle {
+  font-family: var(--font-main);
+  font-size: 1.4rem;
+  color: var(--text-medium);
+  margin-bottom: 2.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  max-width: 800px;
+}
+
+.luxique-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.hero-phone-image {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 1.5rem;
 }
 
-.phone-mockup {
-  position: relative;
-  width: 300px;
-  height: 600px;
-  background: var(--secondary-200);
-  border-radius: 40px;
-  padding: 20px;
-  box-shadow: 0 20px 40px var(--shadow-light);
-}
-
-.phone-screen {
+.hero-phone-mockup {
   width: 100%;
-  height: 100%;
-  background: var(--white);
-  border-radius: 30px;
-  overflow: hidden;
+  max-width: 800px;
+  height: auto;
+  border-radius: 2.2rem;
+  background: transparent;
+}
+
+/* Squiggle line for 'Dating' in hero title */
+.squiggle-container {
   position: relative;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-.app-interface {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+.squiggle-text {
+  position: relative;
+  z-index: 1;
+  background: none;
+  color: var(--text-dark);
+  font-weight: 700;
+  padding: 0 0.1em;
 }
 
-.app-header {
-  background: var(--primary-500);
-  color: var(--white);
-  padding: 20px;
-  text-align: center;
-}
-
-.app-header h3 {
-  margin: 0;
-  font-size: 1.2rem;
-}
-
-.chat-preview {
-  flex: 1;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.message {
-  max-width: 80%;
-  padding: 12px 16px;
-  border-radius: 18px;
-  font-size: 0.9rem;
-}
-
-.message.received {
-  background: var(--secondary-200);
-  align-self: flex-start;
-}
-
-.message.sent {
-  background: var(--primary-500);
-  color: var(--white);
-  align-self: flex-end;
+.squiggle-svg {
+  position: absolute;
+  left: 0;
+  bottom: 0.3em;
+  width: 100%;
+  height: 0.6em;
+  z-index: 2;
+  pointer-events: none;
 }
 
 /* ===== SECTIONS ===== */
@@ -716,22 +663,9 @@ section {
     font-size: 2.5rem;
   }
 
-  .hero-logo-icon {
-    height: 45px;
-  }
-
-  .hero-logo span {
-    font-size: 2.5rem;
-  }
-
   .hero-buttons {
     justify-content: center;
     flex-wrap: wrap;
-  }
-
-  .phone-mockup {
-    width: 250px;
-    height: 500px;
   }
 
   .section-title {
@@ -753,7 +687,6 @@ section {
     grid-template-columns: 1fr;
   }
 
-  /* Mobile button sizing */
   .hero-buttons .app-store-btn img,
   .hero-buttons .google-play-btn img {
     height: 40px;
@@ -764,157 +697,9 @@ section {
     height: 50px;
   }
 
-  /* Mobile logo sizing */
   .logo-icon {
     height: 28px;
   }
-
-  .logo-text {
-    font-size: 1.6rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .container {
-    padding: 0 15px;
-  }
-
-  .hero-title {
-    font-size: 2rem;
-  }
-
-  .hero-logo-icon {
-    height: 35px;
-  }
-
-  .hero-logo span {
-    font-size: 2rem;
-  }
-
-  .hero-subtitle {
-    font-size: 1.2rem;
-  }
-
-  .phone-mockup {
-    width: 200px;
-    height: 400px;
-  }
-
-  .btn {
-    padding: 10px 20px;
-    font-size: 0.9rem;
-  }
-
-  /* Small mobile button sizing */
-  .hero-buttons .app-store-btn img,
-  .hero-buttons .google-play-btn img {
-    height: 35px;
-  }
-
-  .cta-buttons .app-store-btn img,
-  .cta-buttons .google-play-btn img {
-    height: 45px;
-  }
-
-  /* Small mobile logo sizing */
-  .logo-icon {
-    height: 24px;
-  }
-
-  .logo-text {
-    font-size: 1.4rem;
-  }
-}
-
-/* ===== SMOOTH SCROLLING ===== */
-html {
-  scroll-behavior: smooth;
-}
-
-/* ===== LUXIQUE HERO STYLES ===== */
-.luxique-hero {
-  background: linear-gradient(
-    120deg,
-    #f6f9f9 0%,
-    #dff3f5 50%,
-    #b2edf1 80%,
-    #85d3e4 100%
-  );
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-}
-
-.hero-centered-container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 4rem 1.5rem 2rem 1.5rem;
-  margin-top: 12rem;
-}
-
-.hero-top-cta {
-  background: #fff;
-  color: var(--primary-500);
-  border: 1.5px solid rgba(18, 153, 163, 0.5);
-  border-radius: 999px;
-  padding: 0.5em 1.6em;
-  font-size: 1rem;
-  font-family: var(--font-heading);
-  font-weight: 500;
-  margin-bottom: 2rem;
-  box-shadow: 0 2px 12px 0 rgba(18, 153, 163, 0.07);
-  letter-spacing: 0.04em;
-  cursor: pointer;
-}
-
-.luxique-title {
-  font-family: var(--font-heading);
-  font-size: 4.5rem;
-  font-weight: 800;
-  margin-bottom: 1.2rem;
-  color: var(--text-dark);
-  line-height: 1.08;
-  letter-spacing: -0.01em;
-}
-
-.luxique-subtitle {
-  font-family: var(--font-main);
-  font-size: 1.4rem;
-  color: var(--text-medium);
-  margin-bottom: 2.2rem;
-  font-weight: 400;
-  line-height: 1.5;
-}
-
-.luxique-buttons {
-  display: flex;
-  flex-direction: row;
-  gap: 1.2rem;
-  justify-content: center;
-  margin-bottom: 2.5rem;
-}
-
-.hero-phone-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1.5rem;
-}
-
-.hero-phone-mockup {
-  width: 100%;
-  max-width: 800px;
-  height: auto;
-  border-radius: 2.2rem;
-  background: transparent;
 }
 
 @media (max-width: 700px) {
@@ -933,26 +718,40 @@ html {
   }
 }
 
-/* Squiggle line for 'Dating' in hero title */
-.squiggle-container {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .hero-buttons .app-store-btn img,
+  .hero-buttons .google-play-btn img {
+    height: 35px;
+  }
+
+  .cta-buttons .app-store-btn img,
+  .cta-buttons .google-play-btn img {
+    height: 45px;
+  }
+
+  .logo-icon {
+    height: 24px;
+  }
 }
-.squiggle-text {
-  position: relative;
-  z-index: 1;
-  background: none;
-  color: var(--text-dark);
-  font-weight: 700;
-  padding: 0 0.1em;
-}
-.squiggle-svg {
-  position: absolute;
-  left: 0;
-  bottom: 0.3em;
-  width: 100%;
-  height: 0.6em;
-  z-index: 2;
-  pointer-events: none;
+
+/* ===== SMOOTH SCROLLING ===== */
+html {
+  scroll-behavior: smooth;
 }

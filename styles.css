@@ -512,15 +512,29 @@ section {
 
 .step-card {
   background: var(--white);
-  padding: 2rem;
-  border-radius: 20px;
+  padding: 2.5rem 2rem 2rem 2rem;
+  border-radius: 32px;
   text-align: center;
-  box-shadow: 0 10px 30px var(--shadow-light);
+  box-shadow: 0 8px 32px var(--shadow-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.step-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+.step-number {
+  width: 56px;
+  height: 56px;
+  background: var(--primary-100);
+  color: var(--primary-500);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 2px 8px var(--shadow-light);
+  letter-spacing: 0.02em;
 }
 
 .step-card h3 {
@@ -773,4 +787,9 @@ section {
 /* ===== SMOOTH SCROLLING ===== */
 html {
   scroll-behavior: smooth;
+}
+
+/* Remove old emoji icon style */
+.step-icon {
+  display: none;
 }

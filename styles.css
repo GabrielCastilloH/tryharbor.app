@@ -218,16 +218,21 @@ p {
   border: none;
   cursor: pointer;
   z-index: 200;
+  margin-right: 18px;
 }
 
 .navbar__hamburger span {
   display: block;
   width: 26px;
-  height: 2.5px;
+  height: 2.5px !important;
   margin: 4px 0;
   background: var(--primary-500);
   border-radius: 2px;
   transition: 0.3s;
+}
+
+.navbar__hamburger span:last-child {
+  height: 2.5px !important;
 }
 
 /* Mobile overlay */

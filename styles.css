@@ -533,7 +533,6 @@ section {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 2.5rem 2.5rem;
   position: relative;
 }
 
@@ -622,9 +621,7 @@ section {
   .step-card {
     padding: 0 5rem;
     margin-top: 0 !important;
-    width: 80vw;
     max-width: 95vw;
-    min-width: 0;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -976,6 +973,7 @@ html {
   opacity: 0;
   transform: translateY(40px);
   animation: fadeInUp 0.8s forwards;
+  margin-bottom: 0;
 }
 .audience-row:nth-child(1) {
   animation-delay: 0.1s;
@@ -1066,8 +1064,19 @@ html {
     flex-direction: column !important;
     gap: 1.2rem;
     min-height: 0;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .audience-row:last-child {
+    margin-bottom: 0 !important;
   }
   .audience-avatar {
+    margin-bottom: 0.5rem;
+  }
+  .avatar-circle {
+    width: 64px;
+    height: 64px;
+    font-size: 1.7rem;
     margin-bottom: 0.5rem;
   }
   .audience-text,
@@ -1076,5 +1085,11 @@ html {
     align-items: center !important;
     text-align: center;
     max-width: 98vw;
+  }
+  .audience-heading {
+    text-align: center !important;
+  }
+  .audience-narrative {
+    text-align: center !important;
   }
 }

@@ -267,11 +267,11 @@ p {
 }
 
 .navbar__overlay-header {
-  width: 85%;
+  width: 75%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2.5rem 1.5rem 2.5rem;
+  padding-right: 1rem;
 }
 
 .navbar__close {
@@ -894,6 +894,15 @@ section {
   }
   .hero-phone-mockup {
     max-width: 90vw;
+  }
+  .section-title,
+  .how-it-works-title,
+  .features-title,
+  .cta-title {
+    font-size: 2rem !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 }
 

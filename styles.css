@@ -372,21 +372,18 @@ p {
 }
 
 .landing-hero {
-  background: linear-gradient(
-    120deg,
-    #f6f9f9 0%,
-    #dff3f5 50%,
-    #b2edf1 80%,
-    #85d3e4 100%
-  );
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-centered-container {
+  position: relative;
+  z-index: 1;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;

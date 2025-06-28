@@ -574,14 +574,14 @@ section {
   opacity: 0.85;
 }
 .step-svg-arrow-1 {
-  left: 260px;
-  top: 10px;
-  transform: rotate(-8deg);
+  left: 270px;
+  top: 0px;
+  transform: rotate(-20deg);
 }
 .step-svg-arrow-2 {
-  left: 685px;
-  top: 80px;
-  transform: rotate(6deg);
+  left: 635px;
+  top: 300px;
+  transform: rotate(25deg);
 }
 @media (max-width: 1100px) {
   .step-svg-arrow,

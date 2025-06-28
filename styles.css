@@ -8,9 +8,9 @@
   --primary-100: #e8f6f7;
 
   /* Secondary Colors */
-  --secondary-500: #a7b0b3;
-  --secondary-200: #edf3f3;
-  --secondary-100: #fefefe;
+  --secondary-500: #795ece;
+  --secondary-200: #ede7fa;
+  --secondary-100: #f2efff;
 
   /* Additional Colors */
   --green: #0b9c81bb;
@@ -645,7 +645,7 @@ section {
   text-align: left;
   font-weight: 400;
   margin-bottom: 2rem;
-  color: var(--black);
+  color: var(--secondary-500);
 }
 
 .modern-features-grid {
@@ -658,11 +658,11 @@ section {
 }
 
 .dark-feature-card {
-  background: rgba(35, 31, 32, 0.97);
-  color: var(--white);
+  background: rgba(121, 94, 206, 0.13); /* glassy purple */
+  color: var(--black);
   border-radius: 24px;
-  box-shadow: 0 8px 32px 0 rgba(18, 153, 163, 0.1);
-  border: 1.5px solid rgba(18, 153, 163, 0.13);
+  box-shadow: 0 8px 32px 0 rgba(121, 94, 206, 0.1);
+  border: 1.5px solid rgba(121, 94, 206, 0.18);
   padding: 2.5rem 2rem 2rem 2rem;
   display: flex;
   flex-direction: column;
@@ -670,31 +670,29 @@ section {
   min-height: 320px;
   transition: box-shadow 0.2s, border 0.2s;
   text-align: center;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 .dark-feature-card:hover {
-  box-shadow: 0 12px 36px 0 rgba(18, 153, 163, 0.18);
-  border: 1.5px solid var(--primary-500);
+  box-shadow: 0 12px 36px 0 rgba(121, 94, 206, 0.18);
 }
-
 .dark-feature-card .feature-icon {
   font-size: 2.5rem;
-  color: var(--white);
+  color: var(--secondary-500);
   margin-bottom: 1.2rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .dark-feature-card h3 {
-  color: var(--white);
+  color: var(--black);
   font-size: 1.35rem;
   font-weight: 700;
   margin-bottom: 1rem;
   margin-top: 0.2rem;
 }
-
 .dark-feature-card p {
-  color: var(--secondary-200);
+  color: var(--black);
   font-size: 1.08rem;
   font-weight: 400;
   margin-bottom: 0;

@@ -148,6 +148,14 @@ p {
   align-items: center;
   height: 100%;
 }
+
+.navbar__logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .navbar__links {
   display: flex;
   gap: 2.2rem;

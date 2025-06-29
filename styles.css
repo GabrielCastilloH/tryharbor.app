@@ -1344,7 +1344,7 @@ html {
 }
 .terms-title {
   font-family: var(--font-heading);
-  color: var(--secondary-500);
+  color: var(--primary-500);
   font-size: 2.3rem;
   font-weight: 700;
   margin-bottom: 0.7rem;
@@ -1359,7 +1359,7 @@ html {
 }
 .terms-container h2 {
   font-family: var(--font-heading);
-  color: var(--secondary-500);
+  color: var(--primary-500);
   font-size: 1.35rem;
   font-weight: 600;
   margin-top: 2.2rem;

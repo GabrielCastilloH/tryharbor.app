@@ -167,7 +167,8 @@ p {
   height: 100%;
 }
 
-.navbar__links a {
+.navbar__links a,
+.navbar__overlay-links li a {
   text-decoration: none;
   color: var(--primary-500);
   letter-spacing: 0.09em;
@@ -178,6 +179,7 @@ p {
   align-items: center;
   height: 100%;
   position: relative;
+  font-family: var(--font-heading);
 }
 
 .navbar__links a::after {
@@ -293,25 +295,11 @@ p {
 .navbar__overlay-links {
   list-style: none;
   padding: 0;
-  margin: 0 auto 2.5rem auto;
+  margin: 2rem auto 2.5rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-}
-
-.navbar__overlay-links li a {
-  color: var(--primary-500);
-  font-size: 1.3rem;
-  letter-spacing: 0.18em;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s;
-  font-family: var(--font-heading);
-}
-
-.navbar__overlay-links li a:hover {
-  color: var(--green);
 }
 
 .navbar__overlay-cta {

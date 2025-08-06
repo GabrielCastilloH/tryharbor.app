@@ -3,256 +3,217 @@ layout: default
 title: Harbor Relationship App
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Harbor Relationship App</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  </head>
-  <body>
-    {% include header.html %}
-    <!-- Hero Section -->
-    <section id="home" class="hero landing-hero">
-      <div class="hero-centered-container">
-        <button class="hero-top-cta">THE VERY FIRST</button>
-        <h1 class="hero-title landing-title">
-          Cornell
-          <span class="squiggle-container">
-            <span class="squiggle-text">Dating</span>
-            <svg
-              class="squiggle-svg"
-              viewBox="0 0 110 18"
-              width="110"
-              height="18"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M2 10 Q 10 2, 20 10 T 40 10 T 60 10 T 80 10 T 108 10"
-                stroke="#1299a3"
-                stroke-width="4"
-                fill="none"
-                stroke-linecap="round"
-              />
-            </svg>
-          </span>
-          Relationship App
-        </h1>
-        <div class="hero-buttons landing-buttons">
-          <a href="#" class="app-store-btn">
-            <img src="assets/app_store.svg" alt="Download on App Store" />
-          </a>
-          <a href="#" class="google-play-btn">
-            <img src="assets/google_play.svg" alt="Get it on Google Play" />
-          </a>
-        </div>
-        <p class="hero-subtitle landing-subtitle">
-          Form meaningful connections without the superficiality of typical
-          dating apps. Not about pick-up lines or polished selfies. Just real
-          relationships.
+<!-- Hero Section -->
+<section id="home" class="hero landing-hero">
+  <div class="hero-centered-container">
+    <button class="hero-top-cta">THE VERY FIRST</button>
+    <h1 class="hero-title landing-title">
+      Cornell
+      <span class="squiggle-container">
+        <span class="squiggle-text">Dating</span>
+        <svg
+          class="squiggle-svg"
+          viewBox="0 0 110 18"
+          width="110"
+          height="18"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2 10 Q 10 2, 20 10 T 40 10 T 60 10 T 80 10 T 108 10"
+            stroke="#1299a3"
+            stroke-width="4"
+            fill="none"
+            stroke-linecap="round"
+          />
+        </svg>
+      </span>
+      Relationship App
+    </h1>
+    <div class="hero-buttons landing-buttons">
+      <a href="#" class="app-store-btn">
+        <img src="assets/app_store.svg" alt="Download on App Store" />
+      </a>
+      <a href="#" class="google-play-btn">
+        <img src="assets/google_play.svg" alt="Get it on Google Play" />
+      </a>
+    </div>
+    <p class="hero-subtitle landing-subtitle">
+      Form meaningful connections without the superficiality of typical dating
+      apps. Not about pick-up lines or polished selfies. Just real
+      relationships.
+    </p>
+    <div class="hero-phone-image">
+      <img
+        src="images/landing.png"
+        alt="Harbor App Screenshot"
+        class="hero-phone-mockup"
+      />
+    </div>
+  </div>
+</section>
+<!-- How It Works Section -->
+<section id="how-it-works" class="how-it-works">
+  <div class="container">
+    <h2 class="section-title how-it-works-title">How Harbor Works</h2>
+    <div class="steps-grid creative-steps-grid">
+      <div class="step-card step-card-1">
+        <div class="step-number">1</div>
+        <h3>Swipe on Personality</h3>
+        <p>
+          See responses to six thoughtful, short-answer prompts. No profile
+          photos upfront—just personality.
         </p>
-        <div class="hero-phone-image">
-          <img
-            src="images/landing.png"
-            alt="Harbor App Screenshot"
-            class="hero-phone-mockup"
-          />
-        </div>
       </div>
-    </section>
-
-    <!-- How It Works Section -->
-    <section id="how-it-works" class="how-it-works">
-      <div class="container">
-        <h2 class="section-title how-it-works-title">How Harbor Works</h2>
-        <div class="steps-grid creative-steps-grid">
-          <div class="step-card step-card-1">
-            <div class="step-number">1</div>
-            <h3>Swipe on Personality</h3>
-            <p>
-              See responses to six thoughtful, short-answer prompts. No profile
-              photos upfront—just personality.
-            </p>
-          </div>
-          <img
-            src="assets/squiggly_arrow.svg"
-            alt="arrow"
-            class="step-svg-arrow step-svg-arrow-1"
-          />
-          <div class="step-card step-card-2">
-            <div class="step-number">2</div>
-            <h3>One Match at a Time</h3>
-            <p>
-              You can only talk to one person at a time. This ensures your
-              attention is undivided and intentional.
-            </p>
-          </div>
-          <img
-            src="assets/u_arrow.svg"
-            alt="arrow"
-            class="step-svg-arrow step-svg-arrow-2"
-          />
-          <div class="step-card step-card-3">
-            <div class="step-number">3</div>
-            <h3>Gradual Photo Reveal</h3>
-            <p>
-              After 20–30 minutes of chatting, your matches gradually becomes
-              clear. You both must agree to continue before seeing the image.
-            </p>
-          </div>
-        </div>
+      <img
+        src="assets/squiggly_arrow.svg"
+        alt="arrow"
+        class="step-svg-arrow step-svg-arrow-1"
+      />
+      <div class="step-card step-card-2">
+        <div class="step-number">2</div>
+        <h3>One Match at a Time</h3>
+        <p>
+          You can only talk to one person at a time. This ensures your attention
+          is undivided and intentional.
+        </p>
       </div>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features" class="features">
-      <div class="container">
-        <h2 class="section-title features-title">Why Harbor?</h2>
-        <div class="features-grid modern-features-grid">
-          <div class="feature-card dark-feature-card">
-            <div class="feature-icon"><i class="fas fa-balance-scale"></i></div>
-            <h3>Perfectly Balanced Matching</h3>
-            <p>
-              No profile scrolling or gamified likes. Just one person at a time,
-              full attention, and no distractions.
-            </p>
-          </div>
-          <div class="feature-card dark-feature-card">
-            <div class="feature-icon"><i class="fas fa-user-secret"></i></div>
-            <h3>Anonymity by Default</h3>
-            <p>
-              Reveal your identity only when you're ready. Avoid awkward campus
-              run-ins.
-            </p>
-          </div>
-          <div class="feature-card dark-feature-card">
-            <div class="feature-icon"><i class="fas fa-heart"></i></div>
-            <h3>Personality & Attraction</h3>
-            <p>
-              Connect on shared values, then reveal appearance gradually.
-              Emotional meets physical compatibility.
-            </p>
+      <img
+        src="assets/u_arrow.svg"
+        alt="arrow"
+        class="step-svg-arrow step-svg-arrow-2"
+      />
+      <div class="step-card step-card-3">
+        <div class="step-number">3</div>
+        <h3>Gradual Photo Reveal</h3>
+        <p>
+          After 20–30 minutes of chatting, your matches gradually becomes clear.
+          You both must agree to continue before seeing the image.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Features Section -->
+<section id="features" class="features">
+  <div class="container">
+    <h2 class="section-title features-title">Why Harbor?</h2>
+    <div class="features-grid modern-features-grid">
+      <div class="feature-card dark-feature-card">
+        <div class="feature-icon"><i class="fas fa-balance-scale"></i></div>
+        <h3>Perfectly Balanced Matching</h3>
+        <p>
+          No profile scrolling or gamified likes. Just one person at a time,
+          full attention, and no distractions.
+        </p>
+      </div>
+      <div class="feature-card dark-feature-card">
+        <div class="feature-icon"><i class="fas fa-user-secret"></i></div>
+        <h3>Anonymity by Default</h3>
+        <p>
+          Reveal your identity only when you're ready. Avoid awkward campus
+          run-ins.
+        </p>
+      </div>
+      <div class="feature-card dark-feature-card">
+        <div class="feature-icon"><i class="fas fa-heart"></i></div>
+        <h3>Personality & Attraction</h3>
+        <p>
+          Connect on shared values, then reveal appearance gradually. Emotional
+          meets physical compatibility.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- For Students Section -->
+<section id="for-students" class="for-students storyboard-section">
+  <div class="container">
+    <h2 class="section-title audience-title">Who It's For</h2>
+    <div class="audience-storyboard">
+      <!-- Row 1 -->
+      <div class="audience-row">
+        <div class="audience-avatar avatar-left">
+          <span class="avatar-circle"><i class="fas fa-user-friends"></i></span>
+        </div>
+        <div class="audience-text text-right">
+          <div class="audience-heading">People Seeking Real Connections</div>
+          <div class="audience-narrative">
+            You're not looking for hookups. You're tired of surface-level
+            interactions and want to connect with someone in a way that actually
+            matters.
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- For Students Section -->
-    <section id="for-students" class="for-students storyboard-section">
-      <div class="container">
-        <h2 class="section-title audience-title">Who It's For</h2>
-        <div class="audience-storyboard">
-          <!-- Row 1 -->
-          <div class="audience-row">
-            <div class="audience-avatar avatar-left">
-              <span class="avatar-circle"
-                ><i class="fas fa-user-friends"></i
-              ></span>
-            </div>
-            <div class="audience-text text-right">
-              <div class="audience-heading">
-                People Seeking Real Connections
-              </div>
-              <div class="audience-narrative">
-                You're not looking for hookups. You're tired of surface-level
-                interactions and want to connect with someone in a way that
-                actually matters.
-              </div>
-            </div>
-          </div>
-          <!-- Row 2 -->
-          <div class="audience-row">
-            <div class="audience-avatar avatar-left">
-              <span class="avatar-circle"><i class="fas fa-seedling"></i></span>
-            </div>
-            <div class="audience-text text-right">
-              <div class="audience-heading">
-                People Open to Intentional Dating
-              </div>
-              <div class="audience-narrative">
-                You want to take time to really get to know someone. You're open
-                to where the connection leads—but obviously no pressure.
-              </div>
-            </div>
-          </div>
-          <!-- Row 3 -->
-          <div class="audience-row">
-            <div class="audience-avatar avatar-left">
-              <span class="avatar-circle"><i class="fas fa-paw"></i></span>
-            </div>
-            <div class="audience-text text-right">
-              <div class="audience-heading">Built for Big Red</div>
-              <div class="audience-narrative">
-                Every user is verified from the Cornell community. Your identity
-                stays private until you're ready.
-              </div>
-            </div>
+      <!-- Row 2 -->
+      <div class="audience-row">
+        <div class="audience-avatar avatar-left">
+          <span class="avatar-circle"><i class="fas fa-seedling"></i></span>
+        </div>
+        <div class="audience-text text-right">
+          <div class="audience-heading">People Open to Intentional Dating</div>
+          <div class="audience-narrative">
+            You want to take time to really get to know someone. You're open to
+            where the connection leads—but obviously no pressure.
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Subscription Section -->
-    <section class="subscription-section">
-      <div class="container subscription-container">
-        <h2 class="section-title subscription-title">Choose Your Plan</h2>
-        <div class="subscription-cards">
-          <div class="subscription-card free-plan">
-            <h3>Free</h3>
-            <div class="subscription-price">$0<span>/mo</span></div>
-            <ul class="subscription-features">
-              <li>1 match a day</li>
-              <li>5 swipes a day</li>
-            </ul>
-            <button class="subscription-btn" disabled>Current Plan</button>
-          </div>
-          <div class="subscription-card paid-plan">
-            <h3>Premium</h3>
-            <div class="subscription-price">$29<span>/mo</span></div>
-            <ul class="subscription-features">
-              <li>See who swiped on you</li>
-              <li>15 swipes a day</li>
-            </ul>
-            <button class="subscription-btn">Upgrade</button>
+      <!-- Row 3 -->
+      <div class="audience-row">
+        <div class="audience-avatar avatar-left">
+          <span class="avatar-circle"><i class="fas fa-paw"></i></span>
+        </div>
+        <div class="audience-text text-right">
+          <div class="audience-heading">Built for Big Red</div>
+          <div class="audience-narrative">
+            Every user is verified from the Cornell community. Your identity
+            stays private until you're ready.
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Download CTA Section -->
-    <section id="download" class="download-cta">
-      <div class="container">
-        <div class="cta-glassy-card">
-          <h2 class="cta-title">Ready to Connect Intentionally?</h2>
-          <p class="cta-subtitle">
-            Start building meaningful relationships today.
-          </p>
-          <div class="cta-buttons">
-            <a href="#" class="app-store-btn">
-              <img src="assets/app_store.svg" alt="Download on App Store" />
-            </a>
-            <a href="#" class="google-play-btn">
-              <img src="assets/google_play.svg" alt="Get it on Google Play" />
-            </a>
-          </div>
-        </div>
+    </div>
+  </div>
+</section>
+<!-- Subscription Section -->
+<section class="subscription-section">
+  <div class="container subscription-container">
+    <h2 class="section-title subscription-title">Choose Your Plan</h2>
+    <div class="subscription-cards">
+      <div class="subscription-card free-plan">
+        <h3>Free</h3>
+        <div class="subscription-price">$0<span>/mo</span></div>
+        <ul class="subscription-features">
+          <li>1 match a day</li>
+          <li>5 swipes a day</li>
+        </ul>
+        <button class="subscription-btn" disabled>Current Plan</button>
       </div>
-    </section>
-
-    {% include footer.html %}
-    <script src="script.js"></script>
-  </body>
-</html>
+      <div class="subscription-card paid-plan">
+        <h3>Premium</h3>
+        <div class="subscription-price">$29<span>/mo</span></div>
+        <ul class="subscription-features">
+          <li>See who swiped on you</li>
+          <li>15 swipes a day</li>
+        </ul>
+        <button class="subscription-btn">Upgrade</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Download CTA Section -->
+<section id="download" class="download-cta">
+  <div class="container">
+    <div class="cta-glassy-card">
+      <h2 class="cta-title">Ready to Connect Intentionally?</h2>
+      <p class="cta-subtitle">Start building meaningful relationships today.</p>
+      <div class="cta-buttons">
+        <a href="#" class="app-store-btn">
+          <img src="assets/app_store.svg" alt="Download on App Store" />
+        </a>
+        <a href="#" class="google-play-btn">
+          <img src="assets/google_play.svg" alt="Get it on Google Play" />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

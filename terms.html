@@ -16,19 +16,7 @@
     </style>
   </head>
   <body>
-    <nav class="navbar glassy-bg">
-      <div class="navbar__logo">
-        <a href="index.html"
-          ><img src="logo.svg" alt="Harbor Logo" class="logo-icon"
-        /></a>
-      </div>
-      <ul class="navbar__links">
-        <li><a href="index.html#how-it-works">Process</a></li>
-        <li><a href="index.html#features">Features</a></li>
-        <li><a href="index.html#for-students">Audience</a></li>
-      </ul>
-      <a href="index.html#download" class="navbar__cta">Download</a>
-    </nav>
+    {% include header.html %}
     <main class="container terms-container">
       <h1 class="terms-title primary-color">Terms & Conditions</h1>
       <p class="terms-updated"><strong>Last Updated: June 29, 2025</strong></p>
@@ -110,5 +98,6 @@
         <a href="mailto:gabocastillo321@gmail.com">gabocastillo321@gmail.com</a>
       </p>
     </main>
+    {% include footer.html %}
   </body>
 </html>

@@ -1,0 +1,13 @@
+title: Harbor
+url: "https://tryharbor.app"
+domain: tryharbor.app
+baseurl: ""
+markdown: kramdown
+theme: null
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+exclude:
+  - README.md
+  - node_modules
+  - vendor

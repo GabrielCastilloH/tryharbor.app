@@ -1,3 +1,8 @@
+---
+layout: default
+title: Harbor Relationship App
+---
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,46 +23,7 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
   </head>
   <body>
-    <!-- Header -->
-    <nav class="navbar glassy-bg">
-      <div class="navbar__logo">
-        <a href="#home"
-          ><img src="logo.svg" alt="Harbor Logo" class="logo-icon"
-        /></a>
-      </div>
-      <ul class="navbar__links">
-        <li><a href="#how-it-works">Process</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#for-students">Audience</a></li>
-      </ul>
-      <a href="#download" class="navbar__cta">Download</a>
-      <button
-        class="navbar__hamburger"
-        id="navbarHamburger"
-        aria-label="Open menu"
-      >
-        <span></span><span></span><span></span>
-      </button>
-    </nav>
-    <div class="navbar__overlay" id="navbarOverlay">
-      <div class="navbar__overlay-header">
-        <div class="navbar__logo">
-          <a href="#home"
-            ><img src="logo.svg" alt="Harbor Logo" class="logo-icon"
-          /></a>
-        </div>
-        <button class="navbar__close" id="navbarClose" aria-label="Close menu">
-          <span>&#10005;</span>
-        </button>
-      </div>
-      <ul class="navbar__overlay-links">
-        <li><a href="#how-it-works">Process</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#for-students">Audience</a></li>
-      </ul>
-      <a href="#download" class="navbar__overlay-cta">Download</a>
-    </div>
-
+    {% include header.html %}
     <!-- Hero Section -->
     <section id="home" class="hero landing-hero">
       <div class="hero-centered-container">
@@ -286,36 +252,7 @@
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container footer-flex">
-        <div class="footer-logo footer-logo-left">
-          <img src="logo.svg" alt="Harbor Logo" class="footer-logo-icon" />
-          <span class="footer-brand">Harbor</span>
-        </div>
-        <ul class="footer-nav">
-          <li><a href="#how-it-works">Process</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#for-students">Audience</a></li>
-          <li><a href="#download">Download</a></li>
-        </ul>
-        <div class="footer-social footer-social-right">
-          <!-- <a href="#" aria-label="Instagram"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a> -->
-        </div>
-      </div>
-      <div class="container footer-bottom">
-        <div class="footer-copyright">©2025 All Rights Reserved</div>
-        <div class="footer-terms">
-          <a href="terms.html">Terms & Conditions</a> &nbsp;|&nbsp;
-          <a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp;
-          <a href="refund.html">Refund Policy</a>
-        </div>
-      </div>
-    </footer>
-
+    {% include footer.html %}
     <script src="script.js"></script>
   </body>
 </html>

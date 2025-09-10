@@ -1,6 +1,6 @@
-# 🌊 Harbor - A Relationship App for Cornell
+# 🌊 Harbor - A Connection App for Cornell
 
-A modern, clean landing page for Harbor, a relationship app designed by Cornell students for meaningful, personality-based connections.
+A modern, clean landing page for Harbor, a connection app designed by Cornell students for meaningful, personality-based connections.
 
 ## 🎨 Design Features
 
